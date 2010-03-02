@@ -52,3 +52,21 @@ Advanced Usage
   <div style="width: 500px; height: 500px;">
     <%= map.div %>
   </div>
+
+
+StreetViewSearch Usage
+=================
+
+Provides two Google Maps; one overhead map and a side-by-side street view.  
+Allows for initial default search for location and when location found, displays 
+street view alongside.
+
+<% map = GoogleStreetViewSearch.new(:loc => "Omaha, NE" ) %>
+
+<%= map.to_html %>
+<div style="width: 500px; height: 500px;">
+  <%= map.div %>
+</div>
+
+
+
